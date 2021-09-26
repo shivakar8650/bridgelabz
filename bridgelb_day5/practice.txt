@@ -1,0 +1,4 @@
+# When condition is true  
+# TRUE && FALSE || FALSE || TRUE  
+ read -p "enter the nmber" num
+ echo "$num"

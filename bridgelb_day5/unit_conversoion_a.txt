@@ -1,0 +1,10 @@
+#!/bin/bash -x
+a=2.77 | bc
+b=2.0  | bc
+
+for cc in $(seq 0. 0.001 0.02)
+do
+    c=${cc} | bc
+    d=$((a * b * c)) | bc
+    echo "$d" | bc
+done
