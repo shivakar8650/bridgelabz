@@ -1,6 +1,0 @@
-#bin/bash
-
-while(($[$RANDOM%10]));
-do
-   echo "hello"
-done
