@@ -1,0 +1,5 @@
+    feet=0.305
+    z=`echo "$feet^2" | bc`
+    y=$((60 * 40))
+   Meter=`echo "$z * $y" | bc`
+   echo "Rectangular area $Meter meter"

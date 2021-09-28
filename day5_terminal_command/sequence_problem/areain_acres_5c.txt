@@ -1,0 +1,14 @@
+#!/bin/bash -x
+
+    feet=0.305
+    z=`echo "$feet^2" | bc`
+    y=$((60 * 40))
+    Meter=`echo "$z * $y" | bc`
+    echo $Meter" in meter "
+    value=`echo "$Meter*15" | bc`
+    echo $value
+    acres=`echo "scale=3; $value / 4046.86" | bc -l`
+    echo $acres 
+    echo "Rectangular area $Meter meter"
+
+
