@@ -1,0 +1,15 @@
+#!bin/bash -x
+
+function myfunc() {
+     echo "Hello" $3
+     echo "print my function"
+ }
+result=$((RANDOM%2))
+echo "$result"
+myfunc  "shivakar"
+    if [ $result -eq 1 ]
+    then
+         echo "Success"
+    else
+         echo "Failure"
+fi
